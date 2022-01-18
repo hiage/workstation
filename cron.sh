@@ -14,7 +14,6 @@ DATE=$(${PATH_DATE})
 UPTIME=$(${PATH_UPTIME})
 
 printf "$echo" > ${README}
-# printf "\`\`\`\n\n" >> ${README}
 printf "## Machine:\n\`\`\`\n$UNAME\n\`\`\`\n" >> ${README}
 printf "## Date:\n\`\`\`\n$DATE\n\`\`\`\n" >> ${README}
 printf "## Idle:\n\`\`\`\n$UPTIME\n\`\`\`\n" >> ${README}
