@@ -4,9 +4,9 @@ Linux 5.13.0-7620-generic GNU/Linux
 ```
 ## Date:
 ```
-Kam 20 Jan 2022 12:30:01  WIB
+Kam 20 Jan 2022 12:31:01  WIB
 ```
 ## Idle:
 ```
- 00:30:01 up 1 day, 15:38,  1 user,  load average: 0,30, 0,45, 0,79
+ 00:31:01 up 1 day, 15:39,  1 user,  load average: 0,16, 0,38, 0,74
 ```
