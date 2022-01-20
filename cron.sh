@@ -1,13 +1,13 @@
 #!/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Define your installation directory
-# DIRECTORY=/tmp/workstation
+DIRECTORY=/home/runner/work/workstation/workstation
 
 PATH_UNAME=$(which uname)
 PATH_DATE=$(which date)
 PATH_UPTIME=$(which uptime)
 
-# README=$DIRECTORY/README.md
+README=$DIRECTORY/README.md
 
 UNAME=$(${PATH_UNAME} -sro)
 DATE=$(${PATH_DATE})
