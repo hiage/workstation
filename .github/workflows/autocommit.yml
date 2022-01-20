@@ -20,8 +20,8 @@ jobs:
 
       - name: Do something magic hehehe
         run: |
-          chmod +x cron.sh
-          ./cron.sh
+          chmod +x /home/runner/work/workstation/workstation/cron.sh
+          ./home/runner/work/workstation/workstation/cron.sh
         shell: bash
           
       - name: Commit changes
