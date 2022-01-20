@@ -1,12 +1,12 @@
 ## Machine:
 ```
-Linux 5.13.0-7620-generic GNU/Linux
+Linux 5.11.0-1025-azure GNU/Linux
 ```
 ## Date:
 ```
-Kam 20 Jan 2022 07:18:01  WIB
+Thu Jan 20 00:53:02 UTC 2022
 ```
 ## Idle:
 ```
- 07:18:01 up 1 day, 22:26,  1 user,  load average: 1,13, 0,47, 0,29
+ 00:53:02 up 1 min,  0 users,  load average: 0.61, 0.27, 0.10
 ```
