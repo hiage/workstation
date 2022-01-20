@@ -19,6 +19,6 @@ printf "## Date:\n\`\`\`\n$DATE\n\`\`\`\n" >> ${README}
 printf "## Idle:\n\`\`\`\n$UPTIME\n\`\`\`\n" >> ${README}
 
 
-cd $DIRECTORY && git add -A && git commit -m "auto commit - `date +\"%Y-%m-%d\"`" && git push origin main
+#cd $DIRECTORY && git add -A && git commit -m "auto commit - `date +\"%Y-%m-%d\"`" && git push origin main
 
 

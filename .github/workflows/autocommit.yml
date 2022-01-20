@@ -1,0 +1,53 @@
+name: Auto commit
+
+on:
+
+  push:
+    branches:
+      - main
+      
+  schedule:
+  - cron: "0 6 * * *" # https://crontab.guru/every-morning
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+        with:
+         persist-credentials: false
+         fetch-depth: 0
+
+      - name: Do something magic hehehe
+        run: |
+          chmod +x cron.sh
+          ./cron.sh
+        shell: bash
+          
+      - name: Commit changes
+        run: |
+          git config --local user.email "gyfary@ubuntu"
+          git config --local user.name "Abdurrahman Al Ghifari"
+          git add -A
+          
+          arr[0]="mesin(bot): 😂 auto commit"
+          arr[1]="mesin(bot): 😱 auto commit"
+          arr[2]="mesin(bot): 👿 auto commit"
+          arr[3]="mesin(bot): 🤖 auto commit"
+          arr[4]="mesin(bot): 🙏 auto commit"
+          arr[5]="mesin(bot): 🙈 auto commit"
+          arr[6]="mesin(bot): 🐐 auto commit"
+          arr[7]="mesin(bot): 🤖 auto commit"
+          arr[8]="mesin(bot): 😂 auto commit"
+          arr[9]="mesin(bot): 👻 auto commit"
+          
+          rand=$[$RANDOM % ${#arr[@]}]
+          
+          git commit -m "${arr[$rand]}"
+          
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          force: true
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
