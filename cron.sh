@@ -9,11 +9,13 @@ PATH_UPTIME=$(which uptime)
 
 README=$DIRECTORY/README.md
 
-UNAME=$(${PATH_UNAME} -sro)
+UNAME=$(${PATH_UNAME} -srmon)
 DATE=$(${PATH_DATE})
 UPTIME=$(${PATH_UPTIME})
 
 printf "$echo" > ${README}
+printf "powered by [Github Actions](https://github.com/features/actions)" >> ${README}
+printf "[![Auto commit](https://github.com/gyfary/workstation/workflows/Auto%20commit/badge.svg)](https://github.com/gyfary/workstation/actions?query=workflow%3A%22Auto+commit%22)" >> ${README}
 printf "## Machine:\n\`\`\`\n$UNAME\n\`\`\`\n" >> ${README}
 printf "## Date:\n\`\`\`\n$DATE\n\`\`\`\n" >> ${README}
 printf "## Idle:\n\`\`\`\n$UPTIME\n\`\`\`\n" >> ${README}
