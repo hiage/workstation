@@ -7,7 +7,7 @@ on:
       - main
       
   schedule:
-  - cron: "0 6 * * *" # https://crontab.guru/every-morning
+  - cron: "* * * * *" # https://crontab.guru/every-morning (testing jalan gak)
 
 jobs:
   auto_commit:
