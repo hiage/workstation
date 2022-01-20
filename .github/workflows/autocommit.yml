@@ -4,7 +4,7 @@ on:
 
   push:
     branches:
-      - main
+      - master
       
   schedule:
   - cron: "* * * * *" # https://crontab.guru/every-morning (testing jalan gak)
