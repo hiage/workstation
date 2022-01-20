@@ -6,7 +6,7 @@ on:
       - master
       
   schedule:
-  - cron: "1 * * * *" # https://crontab.guru/every-morning (testing jalan gak)
+  - cron: "0 6 * * *" # https://crontab.guru/every-morning (testing jalan gak)
 
 jobs:
   auto_commit:
