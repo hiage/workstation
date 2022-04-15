@@ -27,7 +27,6 @@ jobs:
         run: |
           git config --local user.email "gyfary@ubuntu"
           git config --local user.name "Abdurrahman Al Ghifari"
-          git config --global --add safe.directory /github/workspace
           git add -A
           
           arr[0]="mesin(bot): 😂 auto commit"
@@ -46,7 +45,7 @@ jobs:
           git commit -m "${arr[$rand]}"
           
       - name: GitHub Push
-        uses: ad-m/github-push-action@v0.5.0
+        uses: ad-m/github-push-action@master
         with:
           force: true
           directory: "."
