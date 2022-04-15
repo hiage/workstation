@@ -27,6 +27,7 @@ jobs:
         run: |
           git config --local user.email "gyfary@ubuntu"
           git config --local user.name "Abdurrahman Al Ghifari"
+          git config --global --add safe.directory /github/workspace
           git add -A
           
           arr[0]="mesin(bot): 😂 auto commit"
