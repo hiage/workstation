@@ -4,6 +4,12 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 #DIRECTORY=/tmp/workstation/
 DIRECTORY=/home/runner/work/workstation/workstation
 
+export DEBIAN_FRONTEND=noninteractive
+export DEBCONF_NONINTERACTIVE_SEEN=true
+sudo apt update  > /dev/null && sudo apt install tzdata -yqq > /dev/null    
+export TZ="Asia/Jakarta"
+cat /usr/share/zoneinfo/Asia/Jakarta > /etc/localtime 
+
 PATH_UNAME=$(which uname)
 PATH_DATE=$(which date)
 PATH_UPTIME=$(which uptime)
