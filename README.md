@@ -4,13 +4,13 @@ Powered by [Github Actions](https://github.com/features/actions)
 
 ## Machine:
 ```
-Linux fv-az267-789 5.15.0-1024-azure x86_64 GNU/Linux
+Linux fv-az301-732 5.15.0-1024-azure x86_64 GNU/Linux
 ```
 ## Date:
 ```
-Mon Dec 19 13:07:49 WIB 2022
+Tue Dec 20 13:07:52 WIB 2022
 ```
 ## Idle:
 ```
- 13:07:49 up 0 min,  0 users,  load average: 2.19, 0.72, 0.25
+ 13:07:52 up 0 min,  0 users,  load average: 2.35, 0.77, 0.27
 ```
